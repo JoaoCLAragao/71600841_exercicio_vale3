@@ -8,6 +8,9 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="header">#3e8acc</color>
-    <color name="transparent">#00FFFFFFFF</color>
+    <color name="transparent">#00FFFFFF</color>
     <color name="yellow_view">#ffff8c</color>
+    <color name="money_pink">#e6ff4081</color>
+    <color name="gray_adress">#929292</color>
+    <color name="gray_name">#de515151</color>
 </resources>

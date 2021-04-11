@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">71600841_exercicio_vale3</string>
+    <string name="MONEY_ITS_A_SIN">$</string>
+    <string name="bedroom_petrogradskaya_subway">Bedroom , Petrogradskaya subway</string>
+    <string name="_32_min">32 min</string>
+    <string name="mari_ann">Mari Ann</string>
+    <string name="alison_sweet_mutual">Alison Sweet (mutual)</string>
 </resources>

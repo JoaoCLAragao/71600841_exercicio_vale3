@@ -95,8 +95,7 @@
             <View
                 android:id="@+id/view_yellow_btn_all"
                 android:layout_width="match_parent"
-                android:layout_height="3dp"
-                android:background="@color/yellow_view" />
+                android:layout_height="3dp" />
 
         </LinearLayout>
 
@@ -121,14 +120,14 @@
             <View
                 android:id="@+id/view_yellow_btn_agents"
                 android:layout_width="match_parent"
-                android:layout_height="3dp"
-                android:background="@color/yellow_view" />
+                android:layout_height="3dp" />
 
         </LinearLayout>
 
     </LinearLayout>
 
     <ListView
+        android:id="@+id/list_rent"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 
