@@ -9,4 +9,5 @@
     <color name="white">#FFFFFFFF</color>
     <color name="header">#3e8acc</color>
     <color name="transparent">#00FFFFFFFF</color>
+    <color name="yellow_view">#ffff8c</color>
 </resources>

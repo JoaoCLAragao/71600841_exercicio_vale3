@@ -11,45 +11,125 @@
         android:layout_width="match_parent"
         android:layout_height="60dp"
         android:background="@color/header"
+
         android:orientation="horizontal">
 
         <ImageButton
-            android:layout_gravity="center"
-            android:layout_marginLeft="16dp"
             android:layout_width="24dp"
             android:layout_height="24dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="16dp"
             android:background="@color/transparent"
-            android:src="@drawable/menu"/>
+            android:src="@drawable/menu" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Searching apartments"
-            android:textSize="20sp"
-            android:textColor="@color/white"
-            android:fontFamily="@font/roboto_medium"
-            android:layout_marginLeft="32dp"
             android:layout_gravity="center"
-            />
+            android:layout_marginLeft="70dp"
+            android:fontFamily="@font/roboto_medium"
+            android:text="Searching apartments"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
 
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:layout_marginLeft="50dp"
-            android:src="@drawable/combined_shape"/>
+            android:layout_marginLeft="70dp"
+            android:src="@drawable/combined_shape" />
 
     </LinearLayout>
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="48dp"
         android:background="@color/header"
         android:orientation="horizontal">
 
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="@color/header"
+                android:fontFamily="@font/roboto_medium"
+                android:gravity="center"
+                android:text="FRIENDS"
+                android:textAllCaps="true"
+                android:textColor="@color/white" />
+
+            <View
+                android:id="@+id/view_yellow_btn_friends"
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:background="@color/yellow_view" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="@color/header"
+                android:fontFamily="@font/roboto_medium"
+                android:gravity="center"
+                android:text="FRIENDS"
+                android:textAllCaps="true"
+                android:textColor="@color/white" />
+
+            <View
+                android:id="@+id/view_yellow_btn_all"
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:background="@color/yellow_view" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="@color/header"
+                android:fontFamily="@font/roboto_medium"
+                android:gravity="center"
+                android:text="FRIENDS"
+                android:textAllCaps="true"
+                android:textColor="@color/white" />
+
+            <View
+                android:id="@+id/view_yellow_btn_agents"
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:background="@color/yellow_view" />
+
+        </LinearLayout>
+
     </LinearLayout>
 
     <ListView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content" />
 
 </LinearLayout>
