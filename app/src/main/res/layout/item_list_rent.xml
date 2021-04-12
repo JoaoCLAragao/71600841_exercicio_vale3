@@ -3,7 +3,8 @@
     android:layout_width="match_parent"
     android:layout_height="298dp"
     android:layout_marginHorizontal="8dp"
-    android:layout_marginTop="8dp">
+    android:layout_marginTop="8dp"
+    android:id="@+id/item_lista">
 
     <TextView
         android:id="@+id/money_its_a_sin"
@@ -74,6 +75,7 @@
         android:layout_below="@id/photo_house"
         android:layout_marginLeft="24dp"
         android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
         />
 
     <TextView
