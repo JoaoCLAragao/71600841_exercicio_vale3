@@ -120,7 +120,7 @@
             <View
                 android:id="@+id/view_yellow_btn_agents"
                 android:layout_width="match_parent"
-                android:layout_height="3dp" />
+                android:layout_height="3dp"/>
 
         </LinearLayout>
 

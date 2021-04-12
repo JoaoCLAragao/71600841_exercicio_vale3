@@ -49,7 +49,7 @@
         android:textColor="@color/gray_adress"
         android:textSize="11sp" />
 
-    <ImageButton
+    <ImageView
         android:id="@+id/star_favorite"
         android:layout_width="30dp"
         android:layout_height="30dp"

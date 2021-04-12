@@ -10,7 +10,7 @@ android {
 
     defaultConfig {
         applicationId "com.example.a71600841_exercicio_vale3"
-        minSdkVersion 19
+        minSdkVersion 23
         targetSdkVersion 30
         versionCode 1
         versionName "1.0"
