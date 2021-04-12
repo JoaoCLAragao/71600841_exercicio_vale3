@@ -13,4 +13,6 @@
     <color name="money_pink">#e6ff4081</color>
     <color name="gray_adress">#929292</color>
     <color name="gray_name">#de515151</color>
+    <color name="blue_message">#5c6bc0</color>
+    <color name="green_call">#42bd41</color>
 </resources>
