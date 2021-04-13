@@ -15,4 +15,9 @@
     <color name="gray_name">#de515151</color>
     <color name="blue_message">#5c6bc0</color>
     <color name="green_call">#42bd41</color>
+    <color name="light_gray">#c6c6c6</color>
+    <color name="dark_gray">#646464</color>
+    <color name="backgroud2">#fafafa</color>
+    <color name="brown">#a1887f</color>
+    <color name="black_letter">#333333</color>
 </resources>

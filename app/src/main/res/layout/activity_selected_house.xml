@@ -62,7 +62,7 @@
         android:src="@drawable/photo_mari_ann" />
 
     <TextView
-        android:id="@+id/owner_name"
+        android:id="@+id/name_owner"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/photo_owner"
@@ -78,7 +78,7 @@
         android:id="@+id/linear_layout_btn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/owner_name"
+        android:layout_below="@id/name_owner"
         android:orientation="horizontal">
 
         <Button
@@ -107,8 +107,9 @@
 
     </LinearLayout>
 
-
+    <!--    Linear Layout do $-->
     <LinearLayout
+        android:id="@+id/linear_layout_$"
         android:layout_width="match_parent"
         android:layout_height="70dp"
         android:layout_below="@id/linear_layout_btn"
@@ -118,8 +119,8 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:src="@drawable/bitmap_money"
-            android:padding="10dp"/>
+            android:padding="19dp"
+            android:src="@drawable/bitmap_money" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -130,12 +131,23 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="monthly fee" />
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/roboto_regular"
+                android:text="monthly fee"
+                android:textColor="@color/light_gray"
+                android:textSize="10sp" />
 
             <TextView
+                android:id="@+id/monthly_fee_text"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="1450" />
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="2dp"
+                android:fontFamily="@font/roboto_regular"
+                android:text="1450"
+                android:textColor="@color/dark_gray"
+                android:textSize="18sp" />
 
         </LinearLayout>
 
@@ -148,12 +160,22 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="monthly fee" />
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="15dp"
+                android:text="utility bills"
+                android:textColor="@color/light_gray"
+                android:textSize="10sp" />
 
             <TextView
+                android:id="@+id/utility_bills_text"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="1450" />
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="2dp"
+                android:fontFamily="@font/roboto_regular"
+                android:text="110"
+                android:textColor="@color/dark_gray"
+                android:textSize="18sp" />
 
         </LinearLayout>
 
@@ -166,16 +188,128 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="monthly fee" />
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="15dp"
+                android:text="security deposit"
+                android:textColor="@color/light_gray"
+                android:textSize="10sp" />
 
             <TextView
+                android:id="@+id/security_deposit_text"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="1450" />
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="2dp"
+                android:fontFamily="@font/roboto_regular"
+                android:text="1450"
+                android:textColor="@color/dark_gray"
+                android:textSize="18sp" />
 
         </LinearLayout>
 
     </LinearLayout>
 
+    <LinearLayout
+        android:id="@+id/linear_layout_bus"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:layout_below="@id/linear_layout_$"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="left"
+            android:layout_weight="3"
+            android:padding="8dp"
+            android:src="@drawable/bitmap_bus" />
+
+        <TextView
+            android:id="@+id/adress_simple"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="Petrogradskaya"
+            android:textColor="@color/dark_gray"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear_layout_location"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:layout_below="@id/linear_layout_bus"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="left"
+            android:layout_weight="3"
+            android:padding="8dp"
+            android:src="@drawable/bitmap_bus" />
+
+        <TextView
+            android:id="@+id/adress_full"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="Petropavlovskaya 7 street"
+            android:textColor="@color/dark_gray"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear_layout_maps"
+        android:layout_width="match_parent"
+        android:layout_height="96dp"
+        android:layout_below="@id/linear_layout_location"
+        android:orientation="horizontal">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="3" />
+
+
+        <ImageView
+            android:id="@+id/maps"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/maps" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear_layout_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/linear_layout_maps"
+        android:layout_marginTop="24dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:layout_gravity="left"
+            android:layout_weight="3"
+            android:padding="8dp"
+            android:src="@drawable/bipmap_text" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/roboto_regular"
+            android:gravity="center_vertical"
+            android:text="@string/ultra_text"
+            android:textColor="@color/black_letter"
+            android:textSize="13sp" />
+    </LinearLayout>
 
 </RelativeLayout>
