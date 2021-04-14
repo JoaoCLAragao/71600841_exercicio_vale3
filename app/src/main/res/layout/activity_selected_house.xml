@@ -9,8 +9,7 @@
     <ImageView
         android:id="@+id/image_focus"
         android:layout_width="match_parent"
-        android:layout_height="258dp"
-        android:background="@drawable/bitmap_door" />
+        android:layout_height="258dp"/>
 
     <ImageButton
         android:id="@+id/btn_back"
@@ -50,16 +49,14 @@
         android:layout_alignParentRight="true"
         android:layout_marginTop="35dp"
         android:layout_marginRight="16dp"
-        android:background="@color/transparent"
-        android:src="@drawable/star_full" />
+        android:background="@color/transparent"/>
 
     <ImageView
         android:id="@+id/photo_owner"
         android:layout_width="60dp"
         android:layout_height="60dp"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="228dp"
-        android:src="@drawable/photo_mari_ann" />
+        android:layout_marginTop="228dp" />
 
     <TextView
         android:id="@+id/name_owner"
@@ -69,7 +66,6 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="6dp"
         android:fontFamily="@font/roboto_regular"
-        android:text="Mary Ann"
         android:textColor="@color/gray_name"
         android:textSize="16sp" />
 
@@ -109,7 +105,7 @@
 
     <!--    Linear Layout do $-->
     <LinearLayout
-        android:id="@+id/linear_layout_$"
+        android:id="@+id/linear_layout_money"
         android:layout_width="match_parent"
         android:layout_height="70dp"
         android:layout_below="@id/linear_layout_btn"
@@ -145,7 +141,6 @@
                 android:layout_gravity="center_horizontal"
                 android:layout_marginTop="2dp"
                 android:fontFamily="@font/roboto_regular"
-                android:text="1450"
                 android:textColor="@color/dark_gray"
                 android:textSize="18sp" />
 
@@ -173,7 +168,6 @@
                 android:layout_gravity="center_horizontal"
                 android:layout_marginTop="2dp"
                 android:fontFamily="@font/roboto_regular"
-                android:text="110"
                 android:textColor="@color/dark_gray"
                 android:textSize="18sp" />
 
@@ -201,7 +195,6 @@
                 android:layout_gravity="center_horizontal"
                 android:layout_marginTop="2dp"
                 android:fontFamily="@font/roboto_regular"
-                android:text="1450"
                 android:textColor="@color/dark_gray"
                 android:textSize="18sp" />
 
@@ -213,7 +206,7 @@
         android:id="@+id/linear_layout_bus"
         android:layout_width="match_parent"
         android:layout_height="46dp"
-        android:layout_below="@id/linear_layout_$"
+        android:layout_below="@id/linear_layout_money"
         android:orientation="horizontal">
 
         <ImageView
@@ -230,7 +223,6 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:gravity="center_vertical"
-            android:text="Petrogradskaya"
             android:textColor="@color/dark_gray"
             android:textSize="18sp" />
 
@@ -257,7 +249,6 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:gravity="center_vertical"
-            android:text="Petropavlovskaya 7 street"
             android:textColor="@color/dark_gray"
             android:textSize="18sp" />
 

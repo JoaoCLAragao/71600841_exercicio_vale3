@@ -1,18 +1,17 @@
 package com.example.a71600841_exercicio_vale3
 
 import android.content.Context
+import android.content.Intent
 import android.content.res.Resources
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.BaseAdapter
-import android.widget.ImageButton
-import android.widget.ImageView
-import android.widget.TextView
+import android.widget.*
 import kotlinx.android.synthetic.main.item_list_rent.view.*
 import org.w3c.dom.Text
 
-class rentAdapter (var context: Context, var list_rent: List<Rent>) : BaseAdapter() {
+class rentAdapter(var context: Context, var list_rent: List<Rent>) : BaseAdapter() {
     override fun getView(position: Int, p1: View?, p2: ViewGroup?): View {
         var view = LayoutInflater.from(context).inflate(R.layout.item_list_rent, null)
 
@@ -20,9 +19,9 @@ class rentAdapter (var context: Context, var list_rent: List<Rent>) : BaseAdapte
         value_rent.text = list_rent[position].value_rent.toString()
 
         var star_favorite = view.findViewById<ImageView>(R.id.star_favorite)
-        if (list_rent[position].star == 0){
+        if (list_rent[position].star == 0) {
             star_favorite.setImageDrawable(context.getDrawable(R.drawable.star_empty))
-        }else{
+        } else {
             star_favorite.setImageDrawable((context.getDrawable(R.drawable.star_full)))
         }
 
@@ -33,16 +32,17 @@ class rentAdapter (var context: Context, var list_rent: List<Rent>) : BaseAdapte
         time.text = list_rent[position].time
 
         var photo_house = view.findViewById<ImageView>(R.id.photo_house)
-        if (list_rent[position].photo_house == 0){
+        if (list_rent[position].photo_house == 0) {
             photo_house.visibility = ImageView.GONE
-        }else {
-            photo_house.setImageDrawable(context.getDrawable(list_rent[position].photo_house))
+        } else {
+            //photo_house.setImageDrawable(context.getDrawable(list_rent[position].photo_house))
+            photo_house.background = context.getDrawable(list_rent[position].photo_house)
         }
 
         var photo_owner = view.findViewById<ImageView>(R.id.photo_owner)
-        if (list_rent[position].photo_owner == 0){
+        if (list_rent[position].photo_owner == 0) {
             photo_owner.visibility = ImageView.GONE
-        }else{
+        } else {
             photo_owner.setImageDrawable(context.getDrawable(list_rent[position].photo_owner))
         }
 
@@ -52,6 +52,12 @@ class rentAdapter (var context: Context, var list_rent: List<Rent>) : BaseAdapte
         var surname_owner = view.findViewById<TextView>(R.id.surname_owner)
         surname_owner.text = list_rent[position].surname
 
+        view.item_lista.setOnClickListener {
+            Log.i("Clicou ", "item ".plus(position))
+            var intent = Intent(context, Selected_house::class.java)
+            intent.putExtra("lista", list_rent[position])
+            context.startActivity(intent)
+        }
 
 
 

@@ -1,6 +1,8 @@
 package com.example.a71600841_exercicio_vale3
 
-data class Rent(
+import java.io.Serializable
+
+class Rent (
         var value_rent: Int,
         var star: Int,
         var adress: String,
@@ -9,4 +11,4 @@ data class Rent(
         var photo_owner: Int,
         var name_owner: String,
         var surname: String
-)
+) : Serializable

@@ -20,7 +20,7 @@ class MainActivity : AppCompatActivity() {
                 R.drawable.bitmap_stairs,
                 R.drawable.photo_mari_ann,
                 "Mari Ann",
-                "Alison Sweet (mutual)"
+                "Alison Sweet"
             )
         )
 
@@ -28,12 +28,12 @@ class MainActivity : AppCompatActivity() {
             Rent(
                 1655,
                 1,
-                "Bedroom , Pushkinskaya subway",
+                "Pushkinskaya subway",
                 "58 min",
-                R.drawable.bitmap_door,
-                0,
-                "",
-                ""
+                R.drawable.tobias_tweet_image,
+                R.drawable.tobias_profile_pic,
+                "Tobias",
+                "van Schneider"
             )
         )
 
@@ -41,12 +41,25 @@ class MainActivity : AppCompatActivity() {
             Rent(
                 1450,
                 0,
-                "Bedroom , Petrogradskaya subway",
-                "32 min",
-                R.drawable.bitmap_stairs,
-                R.drawable.photo_mari_ann,
-                "Mari Ann",
-                "Alison Sweet (mutual)"
+                "Petrogradskaya subway",
+                "40 min",
+                R.drawable.bitmap_living_room,
+                R.drawable.azizfirat_profile_pic,
+                "Aziz",
+                "Firat"
+            )
+        )
+
+        api_rent.add(
+            Rent(
+                2000,
+                1,
+                "Av. Santa Cruz 321",
+                "50 Min",
+                R.drawable.bitmap_door,
+                R.drawable.jonatan_profile_pic,
+                "Jonatan",
+                "Castro"
             )
         )
 
